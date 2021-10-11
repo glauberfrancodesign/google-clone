@@ -1,0 +1,157 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+input,
+button {
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.menu {
+    height: 48px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__section {
+    display: flex;
+    align-items: center;
+}
+
+.menu__section.left .menu__icon {
+    padding: 12px 16px;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #757575;
+    padding: 12px 8px;
+}
+
+.menu__link.active{
+    color: #4285F4;
+    border-bottom: 2px solid #4285F4;
+
+}
+
+.menu__link:not(.active) {
+    margin-bottom: 2px;
+}
+
+.menu__section.right{
+    margin-right: 24px;
+}
+
+.menu__section.right .menu__icon {
+    padding: 12px;
+}
+
+
+.menu__profile {
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.menu__icon {
+    width: 56px;
+    height: 56px;
+}
+
+/* Main */
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px 8px 0;
+}
+
+.content__logo {
+    height: 56px;
+}
+
+.content__search {
+    margin-top: 18px;
+    width: 100%;
+    max-width: 736px;
+    padding: 7px 10px 6px 20px;
+    font-size: 18px;
+    color: rgba(0,0,0,0.87);
+    background: transparent;
+    border-radius: 25px;
+    border: 1px solid #dadce0;
+    outline: 0;
+}
+
+.content__offer {
+    margin-top: 24px;
+    font-size: 13px;
+    padding: 6px 24px;
+}
+
+.content__offer a {
+    text-decoration: none;
+    color: #1967d2;
+}
+
+/* Footer */
+
+.footer {
+    margin: 24px;
+    display: flex;
+    flex-direction: column;
+    background: #f2f2f2;
+}
+
+.footer__section:not(:first-child) {
+    border-top: 1px solid #5f63681e;
+}
+
+.footer__location {
+    font-size: 16px;
+    color: rgba(0,0,0,0.54);
+    padding: 10px 12px;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 13px;
+    color: #5f6368;
+    padding: 10px;
+}
+
+.footer__links a {
+    margin-left: 27px;
+}
